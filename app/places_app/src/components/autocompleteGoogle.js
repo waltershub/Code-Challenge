@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
-import { verticalScale } from 'react-native-size-matters';
+import { moderateScale, scale, verticalScale } from 'react-native-size-matters';
 import googleAPIKey from '../../config';
 
 const GooglePlacesInput = ({ goToDetail }) => {
@@ -17,8 +17,18 @@ const GooglePlacesInput = ({ goToDetail }) => {
         textInputContainer: {
           backgroundColor: '#FFF',
           borderTopWidth: 0,
-          height: verticalScale(40),
+          height: verticalScale(80),
           alignItems: 'center',
+          justifyContent: 'flex-end',
+          paddingTop: verticalScale(20),
+          paddingHorizontal: scale(20),
+        },
+        textInput: {
+          backgroundColor: '#d3d3d3',
+          color: '#8E8E93',
+          height: verticalScale(30),
+          borderRadius: moderateScale(10),
+          fontSize: moderateScale(15),
         },
       }}
       returnKeyType={'search'} // Can be left out for default return key https://facebook.github.io/react-native/docs/textinput.html#returnkeytype
@@ -48,7 +58,7 @@ const GooglePlacesInput = ({ goToDetail }) => {
         <TouchableOpacity
           onPress={() => this.GooglePlacesRef.setAddressText('')}
           style={{ alignItems: 'center', justifyContent: 'center' }}>
-          <Text style={{ color: '#007AFF' }}>cancel</Text>
+          <Text style={{ color: '#007AFF', fontSize: moderateScale(14) }}>cancel</Text>
         </TouchableOpacity>
       )}
     />
