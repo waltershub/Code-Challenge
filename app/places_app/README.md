@@ -10,7 +10,7 @@ run react-native run-ios for ios or react-native run-android
 
 ## Screenshots
 
-![screen 1|512x397,20%](readme/ss1.png?raw=true)
+![screen 1|512x397,20%](readme/ss1.png?=250x)
 
 ![512x397,40%](readme/ss2.png?raw=true)
 
