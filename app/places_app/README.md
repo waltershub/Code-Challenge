@@ -9,8 +9,12 @@ create a config.js following the instructions in the example config file adding 
 run react-native run-ios for ios or react-native run-android
 
 ## Screenshots
-[512x397,40%](readme/ss5.png?)
-![512x397,40%]](readme/ss1.png?)
-![512x397,40%](readme/ss2.png?)
-![512x397,40%](readme/ss3.png?)
-![512x397,40%](readme/ss4.png?)
+
+![screen 1|512x397,20%]](readme/ss1.png?raw=true)
+
+![512x397,40%](readme/ss2.png?raw=true)
+
+![512x397,40%](readme/ss3.png?raw=true)
+
+![512x397,40%](readme/ss4.png?raw=true)
+![512x397,40%](readme/ss5.png?raw=true)
