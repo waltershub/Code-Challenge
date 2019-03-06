@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import { moderateScale, scale, verticalScale } from 'react-native-size-matters';
+import Icon from 'react-native-vector-icons/EvilIcons';
 import googleAPIKey from '../../config';
 
 const GooglePlacesInput = ({ goToDetail }) => {
@@ -25,7 +26,7 @@ const GooglePlacesInput = ({ goToDetail }) => {
         },
         textInput: {
           backgroundColor: '#d3d3d3',
-          color: '#8E8E93',
+          color: '#696969',
           height: verticalScale(30),
           borderRadius: moderateScale(10),
           fontSize: moderateScale(15),
@@ -53,7 +54,7 @@ const GooglePlacesInput = ({ goToDetail }) => {
         componentRestrictions: { locality: 'Louisville' },
       }}
       debounce={200} // debounce the requests in ms. Set to 0 to remove debounce. By default 0ms.
-      //renderLeftButton={() => <Image source={require('path/custom/left-icon')} />}
+      renderLeftButton={() => <Icon name="search" size={30} color="#8E8E93" />}
       renderRightButton={() => (
         <TouchableOpacity
           onPress={() => this.GooglePlacesRef.setAddressText('')}
